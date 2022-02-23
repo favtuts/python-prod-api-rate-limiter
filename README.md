@@ -30,3 +30,10 @@ Test endpoints
 > curl -XPOST localhost:5000/resource/test
 > curl localhost:5000/resource/test
 ```
+
+# run docker container
+
+```
+docker build -t prod-api .
+docker run --rm -p 5000:5000 prod-api
+```
