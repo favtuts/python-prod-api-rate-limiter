@@ -17,3 +17,16 @@ pip install flask-limiter
 pip install gunicorn
 pip freeze > requirements.txt
 ```
+
+# run flash development
+
+```
+FLASK_APP=flaskr flask run
+```
+
+Test endpoints
+```
+> curl localhost:5000/test
+> curl -XPOST localhost:5000/resource/test
+> curl localhost:5000/resource/test
+```
