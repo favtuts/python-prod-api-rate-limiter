@@ -13,6 +13,7 @@ bp = Blueprint('resource', __name__, url_prefix='/resource')
 limiter.limit('1/second')(bp)      # <------------ New line
 
 @bp.route('/test', methods=('GET','POST'))
+@limiter.limit('1 per 10 second') # <------------ New line
 def test():
     if request.method == 'POST':
         response = {'message': 'This was a POST'}

@@ -6,4 +6,6 @@ itsdangerous==2.1.0
 Jinja2==3.0.3
 limits==2.3.3
 MarkupSafe==2.1.0
+pymemcache==3.5.1
+six==1.16.0
 Werkzeug==2.0.3
