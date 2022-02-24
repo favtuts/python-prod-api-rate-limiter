@@ -62,3 +62,19 @@ Re-run Prod-API with `--network` options
 docker build -t prod-api .
 docker run --rm --network host prod-api
 ```
+
+# enter docker compose
+
+To start services
+```
+docker-compose up
+# or run backgroud
+docker-compose up -d
+# or rebuild
+docker-compose up --build
+```
+
+To stop services
+```
+docker-compose down
+```
